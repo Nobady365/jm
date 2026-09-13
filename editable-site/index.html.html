@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Blush &amp; Bloom — Mera Crochet</title>
+<meta name="description" content="Blush & Bloom — handmade crochet flowers, bouquets, bags, hair clips, bracelets and keychains. Order directly via WhatsApp or Instagram.">
+<link rel="icon" type="image/jpeg" href="images/logo.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ================= HEADER ================= -->
+<header class="site-header">
+  <div class="header-row">
+    <a href="#home" class="brand">
+      <img src="images/logo.jpg" alt="Blush & Bloom logo">
+      <span class="brand-text">
+        <span class="name">Blush &amp; Bloom</span><br>
+        <span class="tag">MERA CROCHET</span>
+      </span>
+    </a>
+
+    <nav class="main-nav" id="mainNav">
+      <a href="#home">Home</a>
+      <a href="#shop">Shop</a>
+      <a href="#custom">Customize</a>
+      <a href="#about">Our Story</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="header-actions">
+      <button class="icon-btn" id="cartBtn" aria-label="Open cart">
+        🧺
+        <span class="badge" id="cartBadge" style="display:none;">0</span>
+      </button>
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu">☰</button>
+    </div>
+  </div>
+</header>
+
+<!-- ================= HERO ================= -->
+<section class="hero" id="home">
+  <div class="container">
+    <div class="hero-copy">
+      <h1>Every moment, <span>as lovely</span> as a bloom</h1>
+      <p class="lede">At Blush &amp; Bloom, every piece is made by hand, stitch by stitch, with love — crochet flowers, bouquets, bags and gifts that never wilt.</p>
+      <div class="hero-actions">
+        <a href="#shop" class="btn btn-primary">Shop Now</a>
+        <a href="#custom" class="btn btn-outline">Customize Your Own</a>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <img class="tile-tall" src="images/bouquet-big.jpg" alt="Grand crochet rose bouquet">
+      <img src="images/sunflower.jpg" alt="Crochet sunflower">
+      <img src="images/bag-sunflower.jpg" alt="Sunflower crochet bag">
+    </div>
+  </div>
+</section>
+
+<!-- ================= TRUST STRIP ================= -->
+<section class="section" style="padding-top:0;padding-bottom:34px;">
+  <div class="container">
+    <div class="trust-strip">
+      <div class="item">
+        <h3>100% Handmade</h3>
+        <p>Every piece is crocheted by hand, one stitch at a time.</p>
+      </div>
+      <div class="item">
+        <h3>Order via WhatsApp</h3>
+        <p>Build your cart and send your order straight to us in one click.</p>
+      </div>
+      <div class="item">
+        <h3>Made to Last</h3>
+        <p>Yarn flowers that never fade or wilt.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= SHOP ================= -->
+<section class="section section-alt" id="shop">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <h2>Our Collection</h2>
+        <p>From single flowers to bouquets, bags and sweet little accessories — all handmade with yarn.</p>
+      </div>
+    </div>
+    <div class="chip-row" id="chipRow"></div>
+    <div class="grid" id="productGrid"></div>
+  </div>
+</section>
+
+<!-- ================= CUSTOM ORDER ================= -->
+<section class="section" id="custom">
+  <div class="container">
+    <div class="custom-wrap">
+      <div>
+        <h2>Customize Your Own</h2>
+        <p>A special colour, a favourite flower, or your very own idea — tell us, and we will bring it to life in crochet.</p>
+
+        <form id="customForm" onsubmit="return false;">
+          <div class="form-field">
+            <label for="cuName">Your Name</label>
+            <input type="text" id="cuName" placeholder="Enter your name">
+          </div>
+          <div class="form-field">
+            <label for="cuPhone">Phone Number</label>
+            <input type="tel" id="cuPhone" placeholder="03xx-xxxxxxx">
+          </div>
+          <div class="form-field">
+            <label for="cuCity">City</label>
+            <input type="text" id="cuCity" placeholder="Which city are you in?">
+          </div>
+          <div class="form-field">
+            <label for="cuDetails">Describe Your Design</label>
+            <textarea id="cuDetails" placeholder="Colour, size, occasion — tell us anything you have in mind"></textarea>
+          </div>
+          <div class="checkout-choice">
+            <button type="button" id="cuSendWhatsapp" class="channel-btn whatsapp">
+              <strong>WhatsApp</strong>
+              <span>Message us directly</span>
+            </button>
+            <button type="button" id="cuSendInstagram" class="channel-btn instagram">
+              <strong>Instagram</strong>
+              <span>Send via DM</span>
+            </button>
+          </div>
+        </form>
+      </div>
+
+      <div class="custom-visual">
+        <img src="images/rose-white.jpg" alt="Custom crochet flower example">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= ABOUT ================= -->
+<section class="section section-alt" id="about">
+  <div class="container" style="max-width:760px;text-align:center;">
+    <h2 style="font-size:2rem;font-style:italic;margin-bottom:16px;">Our Story</h2>
+    <p style="color:var(--brown);font-size:1.05rem;">
+      Blush &amp; Bloom started as a small home-based crochet studio, where every flower,
+      every bag and every gift is made with patience, care and love. We want each of your
+      special moments to be marked with something that lasts forever.
+    </p>
+  </div>
+</section>
+
+<!-- ================= FOOTER / CONTACT ================= -->
+<footer id="contact">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <h4>Blush &amp; Bloom</h4>
+        <p style="opacity:0.85;max-width:32ch;">Handmade Crochet — flowers, bouquets and gifts, made for your every special moment.</p>
+        <div class="social-row" style="margin-top:16px;">
+          <a href="https://instagram.com/blushandbloomcreations.co" target="_blank" rel="noopener" aria-label="Instagram">IG</a>
+          <a href="https://wa.me/923265477451" target="_blank" rel="noopener" aria-label="WhatsApp">WA</a>
+        </div>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <div class="foot-links">
+          <a href="#shop">Shop</a>
+          <a href="#custom">Customize Your Own</a>
+          <a href="#about">Our Story</a>
+        </div>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <div class="foot-links">
+          <a href="https://wa.me/923265477451" target="_blank" rel="noopener">WhatsApp: 0326-5477451</a>
+          <a href="https://instagram.com/blushandbloomcreations.co" target="_blank" rel="noopener">@blushandbloomcreations.co</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="year"></span> Blush &amp; Bloom. All rights reserved.</span>
+      <span>Made with 🤎 &amp; yarn.</span>
+    </div>
+  </div>
+</footer>
+
+<!-- ================= CART DRAWER ================= -->
+<div class="overlay" id="cartOverlay"></div>
+<aside class="drawer" id="cartDrawer" aria-label="Shopping cart">
+  <div class="drawer-head">
+    <h3>Your Cart</h3>
+    <button class="drawer-close" id="drawerClose" aria-label="Close cart">×</button>
+  </div>
+  <div class="drawer-body" id="drawerBody"></div>
+  <div class="drawer-foot">
+    <div class="subtotal-row">
+      <span>Subtotal</span>
+      <span class="amt" id="cartSubtotal">Rs. 0</span>
+    </div>
+    <button class="btn btn-primary btn-full" id="openCheckoutBtn" disabled>Proceed to Order</button>
+  </div>
+</aside>
+
+<!-- ================= CHECKOUT MODAL ================= -->
+<div class="modal" id="checkoutModal">
+  <div class="modal-backdrop"></div>
+  <div class="modal-box">
+    <button class="modal-close" id="checkoutClose" aria-label="Close">×</button>
+    <h3>Complete Your Order</h3>
+    <p class="sub">Fill in your details — your order will be sent straight to Blush &amp; Bloom.</p>
+
+    <div class="form-field">
+      <label for="coName">Your Name</label>
+      <input type="text" id="coName" placeholder="Enter your name">
+    </div>
+    <div class="form-field">
+      <label for="coPhone">Phone Number</label>
+      <input type="tel" id="coPhone" placeholder="03xx-xxxxxxx">
+    </div>
+    <div class="form-field">
+      <label for="coCity">City</label>
+      <input type="text" id="coCity" placeholder="Which city are you in?">
+    </div>
+    <div class="form-field">
+      <label for="coAddress">Address (optional)</label>
+      <input type="text" id="coAddress" placeholder="Delivery address">
+    </div>
+    <div class="form-field">
+      <label for="coNote">Note (optional)</label>
+      <textarea id="coNote" placeholder="Any special instructions? Write them here"></textarea>
+    </div>
+
+    <div class="order-summary-box" id="orderSummaryBox"></div>
+
+    <div class="checkout-choice">
+      <button type="button" id="sendWhatsapp" class="channel-btn whatsapp">
+        <strong>WhatsApp</strong>
+        <span>Send order as a message</span>
+      </button>
+      <button type="button" id="sendInstagram" class="channel-btn instagram">
+        <strong>Instagram</strong>
+        <span>DM par bhejein</span>
+      </button>
+    </div>
+  </div>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script src="js/products.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
